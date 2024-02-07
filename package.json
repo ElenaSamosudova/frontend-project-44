@@ -4,6 +4,9 @@
   "description": "[![Actions Status](https://github.com/ElenaSamosudova/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ElenaSamosudova/frontend-project-44/actions)",
   "main": "index.js",
   "type": "module",
+  "bin": {
+  "brain-games": "bin/brain-games.js"
+},
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
@@ -17,4 +20,6 @@
     "url": "https://github.com/ElenaSamosudova/frontend-project-44/issues"
   },
   "homepage": "https://github.com/ElenaSamosudova/frontend-project-44#readme"
+
+
 }
