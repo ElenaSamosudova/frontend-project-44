@@ -3,7 +3,7 @@ import { userName } from './helloEven.js';
 import getRandomInt from './randomEven.js';
 import name from './helloEven.js';
 
-console.log('Welcome to the Brain Games!');
+
 name();
 
 const nextNum = () => {
