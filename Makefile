@@ -5,7 +5,7 @@ brain-games:
 	node bin/brain-games.js
 
 even:
-	node src/helloEven.js
+	node games/even.js
 
 publish:
 	npm publish --dry-run
