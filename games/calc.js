@@ -3,15 +3,19 @@ import { getRandomInt, name, userName } from '../src/index.js';
 
 name();
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+console.log('What is the result of the expression?');
 
-const even = () => {
+const calc = () => {
   let i = 1;
 
   while (i <= 3) {
-    const num = getRandomInt(99);
-    console.log(`Question: ${num}`);
-    const rightAnswer = num % 2 === 0 ? 'yes' : 'no';
+    const num1 = getRandomInt(99);
+    const num2 = getRandomInt(99);
+    const operator = ['+', '-', '*'];
+    const randomOper = operator[Math.floor(Math.random() * operator.length)];
+    const result = `${num1} ${randomOper} ${num2}`;
+    console.log(`Question: ${result}`);
+    const rightAnswer = eval(result);
     const userAnswer = readlineSync.question('Your answer:');
 
     if (rightAnswer === userAnswer) {
@@ -28,8 +32,6 @@ const even = () => {
     console.log(`Congratulations, ${userName}!`);
   }
 };
+calc();
 
-const brainEven = () => {
-  even();
-};
-export default brainEven;
+
