@@ -3,22 +3,19 @@ import { getRandomInt, name, userName } from '../src/index.js';
 
 name();
 
-console.log('Find the greatest common divisor of given numbers.');
+console.log('What number is missing in the progression?');
 
-const getGCD = (a, b) => {
-  const gcd = b ? getGCD(b, a % b) : a;
-  return gcd;
-};
-
-const gsd = () => {
+const calc = () => {
   let i = 1;
 
   while (i <= 3) {
     const num1 = getRandomInt(99);
     const num2 = getRandomInt(99);
-    const result = `${num1} ${num2}`;
+    const operator = ['+', '-', '*'];
+    const randomOper = operator[Math.floor(Math.random() * operator.length)];
+    const result = `${num1} ${randomOper} ${num2}`;
     console.log(`Question: ${result}`);
-    const rightAnswer = getGCD(num1, num2);
+    const rightAnswer = eval(result);
     const userAnswer = readlineSync.question('Your answer:');
 
     if (rightAnswer === parseInt(userAnswer)) {
@@ -35,11 +32,3 @@ const gsd = () => {
     console.log(`Congratulations, ${userName}!`);
   }
 };
-
-
-
-const brainGsd = () => {
-  gsd();
-  getGCD();
-};
-export default brainGsd;

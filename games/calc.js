@@ -18,7 +18,7 @@ const calc = () => {
     const rightAnswer = eval(result);
     const userAnswer = readlineSync.question('Your answer:');
 
-    if (rightAnswer === userAnswer) {
+    if (rightAnswer === parseInt(userAnswer)) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
