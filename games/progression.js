@@ -5,17 +5,29 @@ name();
 
 console.log('What number is missing in the progression?');
 
-const calc = () => {
+const getProgression = (start, step, length) => {
+  const progression = [];
+
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + i * step);
+  }
+
+  return progression;
+};
+
+const progressionGame = () => {
   let i = 1;
 
   while (i <= 3) {
-    const num1 = getRandomInt(99);
-    const num2 = getRandomInt(99);
-    const operator = ['+', '-', '*'];
-    const randomOper = operator[Math.floor(Math.random() * operator.length)];
-    const result = `${num1} ${randomOper} ${num2}`;
+    const start = getRandomInt(10);
+    const step = getRandomInt(1, 5);
+    const length = getRandomInt(15);
+    const progression = getProgression(start, step, length);
+    const hiddenNum = getRandomInt(0, progression.length - 1);
+    const rightAnswer = progression[hiddenNum];
+    progression[hiddenNum] = '..';
+    const result = progression.join(' ');
     console.log(`Question: ${result}`);
-    const rightAnswer = eval(result);
     const userAnswer = readlineSync.question('Your answer:');
 
     if (rightAnswer === parseInt(userAnswer)) {
@@ -32,3 +44,5 @@ const calc = () => {
     console.log(`Congratulations, ${userName}!`);
   }
 };
+
+progressionGame();
