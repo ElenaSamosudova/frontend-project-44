@@ -20,7 +20,7 @@ const progressionGame = () => {
 
   while (i <= 3) {
     const start = getRandomInt(10);
-    const step = getRandomInt(1, 5);
+    const step = getRandomInt(5);
     const length = getRandomInt(15);
     const progression = getProgression(start, step, length);
     const hiddenNum = getRandomInt(0, progression.length - 1);
