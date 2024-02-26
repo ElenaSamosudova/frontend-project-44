@@ -20,10 +20,10 @@ const progressionGame = () => {
 
   while (i <= 3) {
     const start = getRandomInt(10);
-    const step = getRandomInt(5);
-    const length = getRandomInt(15);
+    const step = getRandomInt(10);
+    const length = getRandomInt(10);
     const progression = getProgression(start, step, length);
-    const hiddenNum = getRandomInt(0, progression.length - 1);
+    const hiddenNum = getRandomInt(progression.length);
     const rightAnswer = progression[hiddenNum];
     progression[hiddenNum] = '..';
     const result = progression.join(' ');
