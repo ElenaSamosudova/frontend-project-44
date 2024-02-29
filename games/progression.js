@@ -15,13 +15,15 @@ const getProgression = (start, step, length) => {
   return progression;
 };
 
+const getRandomArr = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
 const progressionGame = () => {
   let i = 1;
 
   while (i <= 3) {
     const start = getRandomInt(10);
     const step = getRandomInt(10);
-    const length = getRandomInt(10);
+ const length = getRandomArr(0, 15);
     const progression = getProgression(start, step, length);
     const hiddenNum = getRandomInt(progression.length);
     const rightAnswer = progression[hiddenNum];
@@ -45,4 +47,7 @@ const progressionGame = () => {
   }
 };
 
-progressionGame();
+const brainProgression = () => {
+  progressionGame();
+};
+export default brainProgression;
