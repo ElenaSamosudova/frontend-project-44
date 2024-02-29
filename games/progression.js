@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt, name, userName } from '../src/index.js';
+import { name, userName } from '../src/index.js';
 
 name();
 
@@ -21,11 +21,11 @@ const progressionGame = () => {
   let i = 1;
 
   while (i <= 3) {
-    const start = getRandomInt(10);
-    const step = getRandomInt(10);
- const length = getRandomArr(0, 15);
+    const start = getRandomArr(0, 5);
+    const step = getRandomArr(1, 5);
+ const length = getRandomArr(10, 15);
     const progression = getProgression(start, step, length);
-    const hiddenNum = getRandomInt(progression.length);
+    const hiddenNum = getRandomArr(0, progression.length - 1);
     const rightAnswer = progression[hiddenNum];
     progression[hiddenNum] = '..';
     const result = progression.join(' ');
