@@ -21,7 +21,7 @@ const gsd = () => {
     const rightAnswer = getGCD(num1, num2);
     const userAnswer = readlineSync.question('Your answer:');
 
-    if (rightAnswer === parseInt(userAnswer)) {
+    if (rightAnswer.toString() === userAnswer) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
@@ -35,8 +35,6 @@ const gsd = () => {
     console.log(`Congratulations, ${userName}!`);
   }
 };
-
-
 
 const brainGsd = () => {
   gsd();

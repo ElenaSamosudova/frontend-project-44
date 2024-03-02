@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 import { name, userName } from '../src/index.js';
 
 name();
-
 console.log('What number is missing in the progression?');
 
 const getProgression = (start, step, length) => {
@@ -23,7 +22,7 @@ const progressionGame = () => {
   while (i <= 3) {
     const start = getRandomArr(0, 5);
     const step = getRandomArr(1, 5);
- const length = getRandomArr(10, 15);
+    const length = getRandomArr(10, 15);
     const progression = getProgression(start, step, length);
     const hiddenNum = getRandomArr(0, progression.length - 1);
     const rightAnswer = progression[hiddenNum];
@@ -32,7 +31,7 @@ const progressionGame = () => {
     console.log(`Question: ${result}`);
     const userAnswer = readlineSync.question('Your answer:');
 
-    if (rightAnswer === parseInt(userAnswer)) {
+    if (rightAnswer.toString() === userAnswer) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);

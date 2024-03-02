@@ -15,10 +15,11 @@ const calc = () => {
     const randomOper = operator[Math.floor(Math.random() * operator.length)];
     const result = `${num1} ${randomOper} ${num2}`;
     console.log(`Question: ${result}`);
+    // eslint-disable-next-line no-eval
     const rightAnswer = eval(result);
     const userAnswer = readlineSync.question('Your answer:');
 
-    if (rightAnswer === parseInt(userAnswer)) {
+    if (rightAnswer.toString() === userAnswer) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
