@@ -2,6 +2,19 @@
 [![Actions Status](https://github.com/ElenaSamosudova/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ElenaSamosudova/frontend-project-44/actions)
 https://asciinema.org/connect/c14800c0-b576-4ccb-a055-98ea106a1828
 
+Установка пакета игр:
+1. Создаем новую директорию командой touch brainProject
+2. Переходим в новую созданную директорию командой cd brainProject
+3. Копируем в нее проект командой git clone git@github.com:ElenaSamosudova/frontend-project-44.git
+4. Устанавливаем проект командой npm install
+5. Запускаем игру. Для запуска игры используем команды:
+Проверка на четность - make even
+Калькулятор - make calc
+Наибольший общий делитель - make gcd
+Арифметическая прогрессия - make progression
+Простое число - make prime
+
+Описание игр:
 1. Игра "Проверка на чётность" - bin/brain-even.js.
 Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
 

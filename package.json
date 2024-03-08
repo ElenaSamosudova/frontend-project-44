@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/ElenaSamosudova/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ElenaSamosudova/frontend-project-44/actions)",
+  "description": "Серия из 5 игр на JS - учебный проект Hexlet",
   "main": "index.js",
   "type": "module",
   "bin": {

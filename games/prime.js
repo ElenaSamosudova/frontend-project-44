@@ -1,5 +1,6 @@
-import readlineSync from 'readline-sync';
-import { getRandomInt, name, userName } from '../src/index.js';
+import {
+  getRandomInt, name, playGame,
+} from '../src/index.js';
 
 name();
 
@@ -12,31 +13,13 @@ const isPrime = (num) => {
   return num > 1;
 };
 
-const prime = () => {
-  let i = 1;
-
-  while (i <= 3) {
-    const num = getRandomInt(99);
-    console.log(`Question: ${num}`);
-    const rightAnswer = isPrime(num) ? 'yes' : 'no';
-    const userAnswer = readlineSync.question('Your answer:');
-
-    if (rightAnswer === userAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
-      console.log(`Let's try again, ${userName}!`);
-      break;
-    }
-
-    i += 1;
-  }
-  if (i > 3) {
-    console.log(`Congratulations, ${userName}!`);
-  }
+const isRules = () => {
+  const num = getRandomInt(99);
+  const rightAnswer = isPrime(num) ? 'yes' : 'no';
+  return [num, String(rightAnswer)];
 };
 
-const brainPrime = () => {
-  prime();
+const isBrainPrime = () => {
+  playGame(isRules);
 };
-export default brainPrime;
+export default isBrainPrime;
