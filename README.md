@@ -1,6 +1,9 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ElenaSamosudova/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ElenaSamosudova/frontend-project-44/actions)
-https://asciinema.org/connect/c14800c0-b576-4ccb-a055-98ea106a1828
+
+Демонстрация работы игр:
+
+[![asciicast](https://asciinema.org/a/ezhkrksIrlEzfX0csf1NS87f7.svg)](https://asciinema.org/a/ezhkrksIrlEzfX0csf1NS87f7)
 
 Установка пакета игр:
 1. Создаем новую директорию командой touch brainProject
