@@ -9,7 +9,7 @@ const getGCD = (a, b) => {
   return gcd;
 };
 
-const isRules = () => {
+const rules = () => {
   const num1 = getRandomInt(99);
   const num2 = getRandomInt(99);
   const result = `${num1} ${num2}`;
@@ -18,6 +18,6 @@ const isRules = () => {
 };
 
 const isBrainGcd = () => {
-  playGame(isRules);
+  playGame(rules);
 };
 export default isBrainGcd;

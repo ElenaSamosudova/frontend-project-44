@@ -13,13 +13,13 @@ const isPrime = (num) => {
   return num > 1;
 };
 
-const isRules = () => {
+const rules = () => {
   const num = getRandomInt(99);
   const rightAnswer = isPrime(num) ? 'yes' : 'no';
   return [num, String(rightAnswer)];
 };
 
 const isBrainPrime = () => {
-  playGame(isRules);
+  playGame(rules);
 };
 export default isBrainPrime;

@@ -6,7 +6,7 @@ name();
 
 console.log('What is the result of the expression?');
 
-const isRules = () => {
+const rules = () => {
   const num1 = getRandomInt(99);
   const num2 = getRandomInt(99);
   const operator = ['+', '-', '*'];
@@ -19,6 +19,6 @@ const isRules = () => {
 };
 
 const isBrainCalc = () => {
-  playGame(isRules);
+  playGame(rules);
 };
 export default isBrainCalc;

@@ -15,7 +15,7 @@ const getProgression = (start, step, length) => {
 
 const getRandomArr = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const isRules = () => {
+const rules = () => {
   const start = getRandomArr(0, 5);
   const step = getRandomArr(1, 5);
   const length = getRandomArr(10, 15);
@@ -28,6 +28,6 @@ const isRules = () => {
 };
 
 const isBrainProgression = () => {
-  playGame(isRules);
+  playGame(rules);
 };
 export default isBrainProgression;

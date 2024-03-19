@@ -9,11 +9,11 @@ export const name = () => {
 
 export const getRandomInt = (max) => Math.floor(Math.random() * max);
 
-export const playGame = (isRules) => {
+export const playGame = (rules) => {
   let i = 1;
 
   while (i <= 3) {
-    const [num, rightAnswer] = isRules();
+    const [num, rightAnswer] = rules();
 
     console.log(`Question: ${num}`);
 
