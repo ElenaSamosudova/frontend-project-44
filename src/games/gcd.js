@@ -1,8 +1,7 @@
-import { getRandomInt, name, playGame } from '../src/index.js';
+import playGame from '../index.js';
+import getRandomInt from '../utils.js';
 
-name();
-
-console.log('Find the greatest common divisor of given numbers.');
+const answer = 'Find the greatest common divisor of given numbers.';
 
 const getGCD = (a, b) => {
   const gcd = b ? getGCD(b, a % b) : a;
@@ -18,6 +17,6 @@ const rules = () => {
 };
 
 const isBrainGcd = () => {
-  playGame(rules);
+  playGame(answer, rules);
 };
 export default isBrainGcd;

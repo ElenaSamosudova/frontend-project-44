@@ -1,8 +1,5 @@
-import {
-  getRandomInt, name, playGame,
-} from '../src/index.js';
-
-
+import playGame from '../index.js';
+import getRandomInt from '../utils.js';
 
 const answer = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -13,6 +10,6 @@ const rules = () => {
 };
 
 const isBrainEven = () => {
-  playGame(name, answer, rules);
+  playGame(answer, rules);
 };
 export default isBrainEven;

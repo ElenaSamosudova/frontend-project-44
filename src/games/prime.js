@@ -1,10 +1,7 @@
-import {
-  getRandomInt, name, playGame,
-} from '../src/index.js';
+import playGame from '../index.js';
+import getRandomInt from '../utils.js';
 
-name();
-
-console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+const answer = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   for (let i = 2; i < num; i += 1) {
@@ -20,6 +17,6 @@ const rules = () => {
 };
 
 const isBrainPrime = () => {
-  playGame(rules);
+  playGame(answer, rules);
 };
 export default isBrainPrime;

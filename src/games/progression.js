@@ -1,7 +1,7 @@
-import { name, playGame } from '../src/index.js';
+import playGame from '../index.js';
+import getRandomInt from '../utils.js';
 
-name();
-console.log('What number is missing in the progression?');
+const answer = 'What number is missing in the progression?';
 
 const getProgression = (start, step, length) => {
   const progression = [];
@@ -13,14 +13,12 @@ const getProgression = (start, step, length) => {
   return progression;
 };
 
-const getRandomArr = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
 const rules = () => {
-  const start = getRandomArr(0, 5);
-  const step = getRandomArr(1, 5);
-  const length = getRandomArr(10, 15);
+  const start = getRandomInt(0, 5);
+  const step = getRandomInt(1, 5);
+  const length = getRandomInt(5, 10);
   const progression = getProgression(start, step, length);
-  const hiddenNum = getRandomArr(0, progression.length - 1);
+  const hiddenNum = getRandomInt(0, progression.length - 1);
   const rightAnswer = progression[hiddenNum];
   progression[hiddenNum] = '..';
   const result = progression.join(' ');
@@ -28,6 +26,6 @@ const rules = () => {
 };
 
 const isBrainProgression = () => {
-  playGame(rules);
+  playGame(answer, rules);
 };
 export default isBrainProgression;

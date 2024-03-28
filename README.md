@@ -1,9 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ElenaSamosudova/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ElenaSamosudova/frontend-project-44/actions)
 
-Демонстрация работы игр:
-
-[![asciicast](https://asciinema.org/a/ezhkrksIrlEzfX0csf1NS87f7.svg)](https://asciinema.org/a/ezhkrksIrlEzfX0csf1NS87f7)
 
 Установка пакета игр:
 1. Создаем новую директорию командой touch brainProject
@@ -38,6 +35,8 @@ Your answer: no
 Correct!
 Congratulations, Sam!
 
+[![asciicast](https://asciinema.org/a/esocPOxddvKbwfWpER7aQFW09.svg)](https://asciinema.org/a/esocPOxddvKbwfWpER7aQFW09)
+
 2. Игра "Калькулятор" - bin/brain-calc.js. Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
 
 Пример:
@@ -56,6 +55,8 @@ Question: 25 * 7
 Your answer: 175
 Correct!
 Congratulations, Sam!
+
+[![asciicast](https://asciinema.org/a/F9geCmWBATXPVJih6n3Q2HCet.svg)](https://asciinema.org/a/F9geCmWBATXPVJih6n3Q2HCet)
 
 3. Игра "наибольший общий делитель (НОД)" - bin/brain-gcd.js. Суть игры в следующем: пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
 
@@ -76,6 +77,8 @@ Your answer: 3
 Correct!
 Congratulations, Sam!
 
+[![asciicast](https://asciinema.org/a/hzMQwNBPYcFxv8eM3bQZUcYos.svg)](https://asciinema.org/a/hzMQwNBPYcFxv8eM3bQZUcYos)
+
 4. Игра "Арифметическая прогрессия" - bin/brain-progression.js.
 
 Пример:
@@ -95,7 +98,9 @@ Your answer: 59
 Correct!
 Congratulations, Sam!
 
-5. Игра "Простое число" - bin/brain-prime.js
+[![asciicast](https://asciinema.org/a/DIhleMsNwCEEzPuwxlhDrc9um.svg)](https://asciinema.org/a/DIhleMsNwCEEzPuwxlhDrc9um)
+
+5. Игра "Простое число" - bin/brain-prime.js. 
 
 Пример:
 
@@ -107,6 +112,8 @@ Question: 7
 Your answer: yes
 Correct!
 
-Показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
+[![asciicast](https://asciinema.org/a/IT3RdGWYuxOGbbNMB01b4e27W.svg)](https://asciinema.org/a/IT3RdGWYuxOGbbNMB01b4e27W)
+
+
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/4519834c0908d67ff2c7/maintainability)](https://codeclimate.com/github/ElenaSamosudova/frontend-project-44/maintainability)

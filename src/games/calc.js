@@ -1,10 +1,7 @@
-import {
-  getRandomInt, name, playGame,
-} from '../src/index.js';
+import playGame from '../index.js';
+import getRandomInt from '../utils.js';
 
-name();
-
-console.log('What is the result of the expression?');
+const answer = 'What is the result of the expression?';
 
 const rules = () => {
   const num1 = getRandomInt(99);
@@ -19,6 +16,6 @@ const rules = () => {
 };
 
 const isBrainCalc = () => {
-  playGame(rules);
+  playGame(answer, rules);
 };
 export default isBrainCalc;
