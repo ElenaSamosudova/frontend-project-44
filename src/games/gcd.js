@@ -9,14 +9,14 @@ const getGCD = (a, b) => {
 };
 
 const rules = () => {
-  const num1 = getRandomInt(99);
-  const num2 = getRandomInt(99);
+  const num1 = getRandomInt();
+  const num2 = getRandomInt();
   const result = `${num1} ${num2}`;
   const rightAnswer = getGCD(num1, num2);
   return [result, String(rightAnswer)];
 };
 
-const isBrainGcd = () => {
+const runBrainGcd = () => {
   playGame(answer, rules);
 };
-export default isBrainGcd;
+export default runBrainGcd;

@@ -25,7 +25,7 @@ const rules = () => {
   return [result, String(rightAnswer)];
 };
 
-const isBrainProgression = () => {
+const runBrainProgression = () => {
   playGame(answer, rules);
 };
-export default isBrainProgression;
+export default runBrainProgression;

@@ -11,12 +11,12 @@ const isPrime = (num) => {
 };
 
 const rules = () => {
-  const num = getRandomInt(99);
+  const num = getRandomInt();
   const rightAnswer = isPrime(num) ? 'yes' : 'no';
   return [num, String(rightAnswer)];
 };
 
-const isBrainPrime = () => {
+const runBrainPrime = () => {
   playGame(answer, rules);
 };
-export default isBrainPrime;
+export default runBrainPrime;

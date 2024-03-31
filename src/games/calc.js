@@ -4,8 +4,8 @@ import getRandomInt from '../utils.js';
 const answer = 'What is the result of the expression?';
 
 const rules = () => {
-  const num1 = getRandomInt(99);
-  const num2 = getRandomInt(99);
+  const num1 = getRandomInt();
+  const num2 = getRandomInt();
   const operator = ['+', '-', '*'];
   const randomOper = operator[Math.floor(Math.random() * operator.length)];
   const result = `${num1} ${randomOper} ${num2}`;
@@ -15,7 +15,7 @@ const rules = () => {
   return [result, String(rightAnswer)];
 };
 
-const isBrainCalc = () => {
+const runBrainCalc = () => {
   playGame(answer, rules);
 };
-export default isBrainCalc;
+export default runBrainCalc;
